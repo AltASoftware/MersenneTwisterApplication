@@ -1,6 +1,8 @@
 #include "stdafx.h"
 #include "CppUnitTest.h"
 
+//#include "MersenneTwister.h"
+
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 namespace UnitTestForMersenneTwister
@@ -11,7 +13,9 @@ namespace UnitTestForMersenneTwister
 		
 		TEST_METHOD(TestMethod1)
 		{
-			// TODO: Your test code here
+			CMersenneTwister twister; //just the single throw of the dice for now.
+			int dice = twister.SingleDiceRoll() << "\n";
+
 		}
 
 	};

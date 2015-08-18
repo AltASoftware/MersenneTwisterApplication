@@ -1,11 +1,17 @@
 // MersenneTwisterApplication.cpp : main project file.
 
 #include "stdafx.h"
+#include <iostream>
+
+#include "MersenneTwister.h"
 
 using namespace System;
 
 int main(array<System::String ^> ^args)
 {
-    Console::WriteLine(L"Hello World");
+	CMersenneTwister twister; //just the single throw of the dice for now.
+	std::cout << "Dice Throws " << twister.SingleDiceRoll() << "\n";
+	
+	
     return 0;
 }
