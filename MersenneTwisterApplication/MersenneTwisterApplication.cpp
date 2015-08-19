@@ -10,7 +10,7 @@ using namespace System;
 int main(array<System::String ^> ^args)
 {
 	CMersenneTwister twister; //just the single throw of the dice for now.
-	std::cout << "Dice Throws " << twister.SingleDiceRoll() << "\n";
+	std::cout << "Dice Throws " << twister.SingleDiceRoll(19650218UL) << "\n";
 	
 	
     return 0;
